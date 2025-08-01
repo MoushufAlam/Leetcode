@@ -6,7 +6,6 @@ public:
         while (start <= end) {
             char st = tolower(s[start]);
             char en = tolower(s[end]);
-            cout<<st<<" "<<en<<endl;
             if (!isalnum(st)) {
                 start++;
                 continue;
