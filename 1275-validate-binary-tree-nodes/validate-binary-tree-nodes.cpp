@@ -2,7 +2,7 @@ class Solution {
 public:
     bool validateBinaryTreeNodes(int n, vector<int>& leftChild,
                                  vector<int>& rightChild) {
-        map<int, vector<int>> graph;
+        unordered_map<int, vector<int>> graph;
         vector<int> indegree(10001, 0);
         for (int i = 0; i < n; i++) {
             if (leftChild[i] != -1) {
